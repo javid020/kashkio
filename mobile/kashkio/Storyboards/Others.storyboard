@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Istek View Controller-->
+        <scene sceneID="Pq9-VO-ukb">
+            <objects>
+                <viewController storyboardIdentifier="NewIstekViewController" id="ptj-QV-QzP" customClass="NewIstekViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jF0-hi-Cml">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeni su istəyi 💧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jc-JS-MrW">
+                                <rect key="frame" x="20" y="44" width="274" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="DIN-gc-mAE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="34"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burada hansı növ su istədiyinizi qeyd edin." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLx-0v-LMm">
+                                <rect key="frame" x="20" y="110" width="374" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="R62-vv-JaF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7hw-Q4-UHM">
+                                <rect key="frame" x="20" y="145" width="374" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teapot" translatesAutoresizingMaskIntoConstraints="NO" id="CAd-lc-UXa" customClass="UIImageViewX" customModule="test" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.15394332999999999" green="0.25710597629999998" blue="0.57737058399999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cleaning" translatesAutoresizingMaskIntoConstraints="NO" id="hbY-1e-odD" customClass="UIImageViewX" customModule="test" customModuleProvider="target">
+                                        <rect key="frame" x="95.5" y="0.0" width="87.5" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.15394332999999999" green="0.25710597629999998" blue="0.57737058399999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby-shower" translatesAutoresizingMaskIntoConstraints="NO" id="cu9-Y7-hB8" customClass="UIImageViewX" customModule="test" customModuleProvider="target">
+                                        <rect key="frame" x="191" y="0.0" width="87.5" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.15394332999999999" green="0.25710597629999998" blue="0.57737058399999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="Noc-U9-7oQ" customClass="UIImageViewX" customModule="test" customModuleProvider="target">
+                                        <rect key="frame" x="286.5" y="0.0" width="87.5" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.15394332999999999" green="0.25710597629999998" blue="0.57737058399999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5pF-Ha-mAC"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Təsvir" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WC7-u5-Hbo">
+                                <rect key="frame" x="20" y="276" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFc-4F-gRk">
+                                <rect key="frame" x="20" y="308" width="374" height="2"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78731137510000004" green="0.81076186900000002" blue="0.87304240470000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhz-NN-F7e" customClass="UIButtonX" customModule="test" customModuleProvider="target">
+                                <rect key="frame" x="28" y="741" width="359" height="61"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.15394332999999999" green="0.25710597629999998" blue="0.57737058399999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="GÖNDƏR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="gonderPressed" destination="ptj-QV-QzP" eventType="touchUpInside" id="eZG-wD-msC"/>
+                                    <segue destination="HAN-34-bjw" kind="show" id="LD2-Im-3Lc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Kn-1D-miY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WLx-0v-LMm" firstAttribute="leading" secondItem="0Kn-1D-miY" secondAttribute="leading" constant="20" id="443-qF-tto"/>
+                            <constraint firstItem="7hw-Q4-UHM" firstAttribute="leading" secondItem="0Kn-1D-miY" secondAttribute="leading" constant="20" id="9vb-Lz-is3"/>
+                            <constraint firstItem="0Kn-1D-miY" firstAttribute="trailing" secondItem="WLx-0v-LMm" secondAttribute="trailing" constant="20" id="Eow-T8-HgI"/>
+                            <constraint firstItem="7hw-Q4-UHM" firstAttribute="top" secondItem="WLx-0v-LMm" secondAttribute="bottom" constant="8" symbolic="YES" id="Pwx-7U-MKH"/>
+                            <constraint firstItem="4jc-JS-MrW" firstAttribute="leading" secondItem="0Kn-1D-miY" secondAttribute="leading" constant="20" id="U3C-iv-DfA"/>
+                            <constraint firstItem="0Kn-1D-miY" firstAttribute="trailing" secondItem="7hw-Q4-UHM" secondAttribute="trailing" constant="20" id="cU7-oQ-zK7"/>
+                            <constraint firstItem="0Kn-1D-miY" firstAttribute="trailing" secondItem="4jc-JS-MrW" secondAttribute="trailing" constant="120" id="deG-Uw-Q6g"/>
+                            <constraint firstItem="WLx-0v-LMm" firstAttribute="top" secondItem="4jc-JS-MrW" secondAttribute="bottom" constant="5" id="rdX-F1-Gqc"/>
+                            <constraint firstItem="4jc-JS-MrW" firstAttribute="top" secondItem="0Kn-1D-miY" secondAttribute="top" id="wEV-hf-DXd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="babyShowerImageView" destination="cu9-Y7-hB8" id="VT2-47-45E"/>
+                        <outlet property="cleaningImageView" destination="hbY-1e-odD" id="f7A-Qk-tGH"/>
+                        <outlet property="plantImageView" destination="Noc-U9-7oQ" id="gW2-bf-r8k"/>
+                        <outlet property="sendButton" destination="zhz-NN-F7e" id="0oE-YG-xwr"/>
+                        <outlet property="teapotImageView" destination="CAd-lc-UXa" id="chO-qu-cua"/>
+                        <outlet property="tesvirTextField" destination="WC7-u5-Hbo" id="E1N-9y-lVv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJS-YA-Z6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="196"/>
+        </scene>
+        <!--Success View Controller-->
+        <scene sceneID="DWG-nq-q4h">
+            <objects>
+                <viewController storyboardIdentifier="success" id="HAN-34-bjw" customClass="SuccessViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9dZ-sa-ewA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tez bir zamanda istəyiniz yaxınlıqda yaşıyanlara göndəriləcəkdir. Suyunuz bol olsun!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAo-pO-HOt">
+                                <rect key="frame" x="20" y="448" width="374" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İstəyiniz yerləşdirildi!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0O-JP-Y5p">
+                                <rect key="frame" x="20" y="397" width="374" height="28"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAz-0t-rd9" customClass="UIButtonX" customModule="test" customModuleProvider="target">
+                                <rect key="frame" x="28" y="708" width="359" height="61"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.15394332999999999" green="0.25710597629999998" blue="0.57737058399999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="BAĞLA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissPressed" destination="HAN-34-bjw" eventType="touchUpInside" id="5qH-3Y-HUm"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fff" translatesAutoresizingMaskIntoConstraints="NO" id="Sgh-Ec-DMV">
+                                <rect key="frame" x="87" y="235" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Ae-Wz-YcH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VIc-NX-TjR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbP-7r-FBm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1106" y="196"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="CAd-lc-UXa">
+            <size key="intrinsicContentSize" width="33" height="28"/>
+        </designable>
+        <designable name="Noc-U9-7oQ">
+            <size key="intrinsicContentSize" width="32.5" height="32.5"/>
+        </designable>
+        <designable name="cu9-Y7-hB8">
+            <size key="intrinsicContentSize" width="25" height="28"/>
+        </designable>
+        <designable name="hbY-1e-odD">
+            <size key="intrinsicContentSize" width="25" height="28"/>
+        </designable>
+        <designable name="kAz-0t-rd9">
+            <size key="intrinsicContentSize" width="51" height="30"/>
+        </designable>
+        <designable name="zhz-NN-F7e">
+            <size key="intrinsicContentSize" width="68" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="baby-shower" width="50" height="56"/>
+        <image name="cleaning" width="50" height="56"/>
+        <image name="fff" width="638" height="630"/>
+        <image name="forest" width="65" height="65"/>
+        <image name="teapot" width="66" height="56"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

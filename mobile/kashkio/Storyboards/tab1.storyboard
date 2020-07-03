@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ozT-lq-aDD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--İstəklərim-->
+        <scene sceneID="Y9V-0j-is2">
+            <objects>
+                <tableViewController id="ang-w5-7d2" customClass="IsteklerimViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="P1Y-nM-hra">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="100" maxX="0.0" maxY="0.0"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemTealColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="isteklerimID" rowHeight="485" id="Z7s-m8-z75" customClass="IsteklerimTableViewCell" customModule="test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="485"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z7s-m8-z75" id="8ag-HI-gzh">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="485"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iez-3P-Chn" customClass="UIViewX" customModule="test" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="27" width="374" height="431"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jack" translatesAutoresizingMaskIntoConstraints="NO" id="ZtD-i6-vc2" customClass="UIImageViewX" customModule="test" customModuleProvider="target">
+                                            <rect key="frame" x="33" y="44" width="64" height="64"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="32"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMf-cB-ugm">
+                                            <rect key="frame" x="105" y="50" width="278" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1K-ec-AUz">
+                                            <rect key="frame" x="105" y="82" width="278" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salam. Evimdə su bitib və mənə içməli 5 lt su lazımdır. Təşəkkür edirəm!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNL-Ai-Ata">
+                                            <rect key="frame" x="33" y="118" width="350" height="47"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aPr-sL-cnI">
+                                            <rect key="frame" x="33" y="194" width="350" height="241"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <prototypes>
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="isteklerimCellID" rowHeight="62" id="lm3-el-1BE" customClass="IsteklerimPeopleTableViewCell" customModule="test" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="28" width="350" height="62"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lm3-el-1BE" id="bkW-58-xlp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="62"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jack" translatesAutoresizingMaskIntoConstraints="NO" id="xfg-GF-iv8" customClass="UIImageViewX" customModule="test" customModuleProvider="target">
+                                                                <rect key="frame" x="20" y="11" width="40" height="40"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diI-oy-SBn">
+                                                                <rect key="frame" x="70" y="11" width="128" height="21"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG3-TK-ihO">
+                                                                <rect key="frame" x="70" y="37" width="128" height="14"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJE-Db-ssg" customClass="UIButtonX" customModule="test" customModuleProvider="target">
+                                                                <rect key="frame" x="300" y="19" width="25" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" backgroundImage="success"/>
+                                                                <connections>
+                                                                    <action selector="acceptPressed" destination="lm3-el-1BE" eventType="touchUpInside" id="121-TL-1TS"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDH-9U-E4T" customClass="UIButtonX" customModule="test" customModuleProvider="target">
+                                                                <rect key="frame" x="259" y="19" width="25" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" backgroundImage="delete"/>
+                                                                <connections>
+                                                                    <action selector="dismissPressed" destination="lm3-el-1BE" eventType="touchUpInside" id="LLn-5a-jkw"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsB-aL-n8I" customClass="UIButtonX" customModule="test" customModuleProvider="target">
+                                                                <rect key="frame" x="218" y="19" width="25" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" backgroundImage="telephone"/>
+                                                                <connections>
+                                                                    <action selector="callPressed" destination="lm3-el-1BE" eventType="touchUpInside" id="ApJ-Fd-44w"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </tableViewCellContentView>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <outlet property="helperFullnameLabel" destination="diI-oy-SBn" id="GXk-T1-AQ3"/>
+                                                        <outlet property="helperImageView" destination="xfg-GF-iv8" id="6pu-r0-RO8"/>
+                                                        <outlet property="helperPhoneLabel" destination="gG3-TK-ihO" id="s0W-nK-uVf"/>
+                                                    </connections>
+                                                </tableViewCell>
+                                            </prototypes>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <connections>
+                                    <outlet property="istekDescriptionLabel" destination="K1K-ec-AUz" id="TtA-QP-QpF"/>
+                                    <outlet property="istekInfoLabel" destination="UNL-Ai-Ata" id="oeM-po-1qC"/>
+                                    <outlet property="istekNameLabel" destination="AMf-cB-ugm" id="3R8-H4-2z1"/>
+                                    <outlet property="isteklerimImageView" destination="ZtD-i6-vc2" id="Vh7-GQ-Eqb"/>
+                                    <outlet property="isteklerimTableView" destination="aPr-sL-cnI" id="bFa-RO-wut"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ang-w5-7d2" id="xyD-6z-LYv"/>
+                            <outlet property="delegate" destination="ang-w5-7d2" id="U0L-N6-c7U"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="İstəklərim" id="7bG-bj-Z8H">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Lln-fX-hQ8"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5R-X3-nsp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210.1449275362319" y="-750"/>
+        </scene>
+        <!--Istəklərim-->
+        <scene sceneID="uw7-a9-1N5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ozT-lq-aDD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Istəklərim" image="Isteklerim" id="znj-RN-AaG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JJb-JK-aWd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ang-w5-7d2" kind="relationship" relationship="rootViewController" id="MAA-gP-e34"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYg-0f-RKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="-750"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="MJE-Db-ssg">
+            <size key="intrinsicContentSize" width="12.5" height="18"/>
+        </designable>
+        <designable name="RsB-aL-n8I">
+            <size key="intrinsicContentSize" width="12.5" height="12.5"/>
+        </designable>
+        <designable name="ZtD-i6-vc2">
+            <size key="intrinsicContentSize" width="64" height="64"/>
+        </designable>
+        <designable name="lDH-9U-E4T">
+            <size key="intrinsicContentSize" width="12.5" height="18"/>
+        </designable>
+        <designable name="xfg-GF-iv8">
+            <size key="intrinsicContentSize" width="64" height="64"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Isteklerim" width="21" height="21"/>
+        <image name="Jack" width="64" height="64"/>
+        <image name="delete" width="12.5" height="12.5"/>
+        <image name="success" width="12.5" height="12.5"/>
+        <image name="telephone" width="12.5" height="12.5"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -10,6 +10,8 @@ public class UserDto {
 
     String nickname;
 
+    String imageUrl;
+
     Float latitude;
 
     Float longitude;

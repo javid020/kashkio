@@ -14,9 +14,9 @@ public class User {
     @GeneratedValue(strategy=GenerationType.AUTO)
     Integer id;
 
-    @JsonProperty(access = WRITE_ONLY)
     String login;
 
+    @JsonProperty(access = WRITE_ONLY)
     String password;
 
     String nickname;

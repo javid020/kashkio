@@ -21,6 +21,8 @@ public class User {
 
     String nickname;
 
+    String imageUrl;
+
     Float latitude = 0.0f;
 
     Float longitude = 0.0f;

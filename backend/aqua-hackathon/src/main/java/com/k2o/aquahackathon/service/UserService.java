@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -51,6 +52,8 @@ public class UserService {
             User u = existingUser.get();
             if (user.getNickname() != null)
                 u.setNickname(user.getNickname());
+            if (user.getImageUrl() != null)
+                u.setImageUrl(user.getImageUrl());
             if (user.getLatitude() != null)
                 u.setLatitude(user.getLatitude());
             if (user.getLongitude() != null)
@@ -71,6 +74,11 @@ public class UserService {
         }
         else
             return null;
+    }
+
+    public Iterable<UserDto> getAllUsers() {
+        Iterable<User> userList = userRepository.findAll();
+        return UserMapper.INSTANCE.userListToDto(userList);
     }
 
 

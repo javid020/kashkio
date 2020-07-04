@@ -22,12 +22,6 @@ class IsteklerimTableViewCell: UITableViewCell {
     
     
     
-    var istek: WaterRequest? {
-        didSet {
-            istekNameLabel.text = istek?.initator?.nickname
-            istekDescriptionLabel.text = istek?.additionalInfo
-        }
-    }
     
     var helpers: [User]? {
         didSet {

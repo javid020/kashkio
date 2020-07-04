@@ -31,16 +31,6 @@ class IsteklerimViewController: UITableViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "pen"), style: .plain, target: self, action: #selector(newIstekPressed))
         
-
-        NetworkManager.shared.getListOfAppliedUsers(waterRequestID: 4) { result in
-            switch result {
-            case .success(_):
-                print("ok")
-            case .failure(let error):
-                print(error)
-            }
-        }
-        
     }
     
     @objc func newIstekPressed() {

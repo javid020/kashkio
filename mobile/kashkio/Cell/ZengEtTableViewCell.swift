@@ -51,22 +51,6 @@ class ZengEtTableViewCell: UITableViewCell {
     }
     
     
-    
-    
-    func setup(istek: WaterRequest, id: Int) {
-        self.istek = istek
-        self.id = id
-    }
-    
-    @IBAction func zengEtPressed() {
-        guard let number = URL(string: "tel://" + "+994504800468") else { return }
-        UIApplication.shared.open(number)
-    }
-    
-    @IBAction func yardimEtPressed() {
-        yardimEtDelegate?.yardimEtPrressed(id: -1)
-    }
-    
     func setupLocationService() {
         locationManager.delegate = self
         locationManager.distanceFilter = 10

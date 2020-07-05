@@ -47,6 +47,14 @@ extension IsteklerimViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return istekler.count
     }
+
+            
+        NSLayoutConstraint.activate([
+            imageView.widthAnchor.constraint(equalToConstant: 40),
+            imageView.heightAnchor.constraint(equalToConstant: 40),
+            imageView.centerXAnchor.constraint(equalTo: mapView.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: mapView.centerYAnchor)
+        ])
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         

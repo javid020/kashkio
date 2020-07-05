@@ -61,12 +61,6 @@ class NewIstekViewController: UIViewController {
         teapotImageView.layer.borderWidth = 2
     }
     
-    @objc func cleaningPressed() {
-        resetAll()
-        selectedItem = 2
-        cleaningImageView.layer.borderWidth = 2
-    }
-    
     @objc func babyShowerPressed() {
         resetAll()
         selectedItem = 3
@@ -108,13 +102,6 @@ class NewIstekViewController: UIViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(imageView)
-        
-        NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: 40),
-            imageView.heightAnchor.constraint(equalToConstant: 40),
-            imageView.centerXAnchor.constraint(equalTo: mapView.centerXAnchor),
-            imageView.centerYAnchor.constraint(equalTo: mapView.centerYAnchor)
-        ])
         
         
         

@@ -42,6 +42,14 @@ extension RatingViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
         
     }
+
+            
+        NSLayoutConstraint.activate([
+            imageView.widthAnchor.constraint(equalToConstant: 40),
+            imageView.heightAnchor.constraint(equalToConstant: 40),
+            imageView.centerXAnchor.constraint(equalTo: mapView.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: mapView.centerYAnchor)
+        ])
     
     
     

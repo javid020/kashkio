@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.2.1)
+  - GoogleMaps (3.9.0):
+    - GoogleMaps/Maps (= 3.9.0)
+  - GoogleMaps/Base (3.9.0)
+  - GoogleMaps/Maps (3.9.0):
+    - GoogleMaps/Base
+  - IQKeyboardManager (6.5.5)
+  - JMMaskTextField-Swift (0.1.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - GoogleMaps
+  - IQKeyboardManager
+  - JMMaskTextField-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - GoogleMaps
+    - IQKeyboardManager
+    - JMMaskTextField-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  JMMaskTextField-Swift: 16aa552605b121285e6c2f0817ab31cea5f4704b
+
+PODFILE CHECKSUM: af388d498ca9f532b39a216bddc3b2e9e3a1393c
+
+COCOAPODS: 1.9.3
